@@ -1,0 +1,47 @@
+let datalist=[
+    {
+        id:000,
+        title:"我的同桌",
+        acther:'作业没写完666',
+        count:2580,
+        content:'和电动机是电话费'
+    },
+    {
+        id:1111,
+        title:"我的同桌",
+        acther:'作业没写完666',
+        count:2580,
+        content:'和电动机是电话费'
+    },
+    {
+        id:2222,
+        title:"我的同桌",
+        acther:'作业没写完666',
+        count:2580,
+        content:'和电动机是电话费'
+    },
+    {
+        id:3333,
+        title:"我的同桌",
+        acther:'作业没写完666',
+        count:2580,
+        content:'和电动机是电话费'
+    },
+    {
+        id:4444,
+        title:"我的同桌",
+        acther:'作业没写完666',
+        count:2580,
+        content:'和电动机是电话费'
+    }
+]
+
+module.exports ={
+    devServe:{
+        before(app){
+            app.get('/list',(req,res)=>{
+                res.send(datalist)
+            })
+        }
+    }
+}
